@@ -36,7 +36,7 @@ jobs:
             echo "::set-output name=changed_charts::$charts"
           fi
       
-      # TODO: (tuananh) since chart-testing doesn't support OCI registry yet
+      # TODO: (hungran) since chart-testing doesn't support OCI registry yet
       # we will build and use this PR in the meantime
       # ref: https://github.com/helm/chart-testing/pull/445
 
@@ -69,7 +69,7 @@ jobs:
           fi
 
       # Skip testing for now since it doesn't support pulling chart from OCI registry yet.
-      # TODO: (tuananh): wait til the PR lands and we can re-enable it.
+      # TODO: (hungran): wait til the PR lands and we can re-enable it.
 
       - name: Create kind cluster
         uses: helm/kind-action@v1.5.0
